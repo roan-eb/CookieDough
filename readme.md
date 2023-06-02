@@ -13,10 +13,13 @@ Bij dit project heb ik een cookie clicker gemaakt, je kan onder andere de kleur 
 ## Screenshots
 
 ### Desktop Screenshot
-![Het gerealiseerde eindproduct op desktop.]()
+![Het gerealiseerde eindproduct op desktop.](https://github.com/roan-eb/CookieDough/blob/main/img/Screenshot%202023-06-02%20at%208.45.33%20PM.png)
+
+![Het gerealiseerde eindproduct op desktop.](https://github.com/roan-eb/CookieDough/blob/main/img/Screenshot%202023-06-02%20at%208.45.59%20PM.png)
+
 
 ### Mobile Screenshot
-![Het gerealiseerde eindproduct op mobile.]()
+![Het gerealiseerde eindproduct op mobile.](https://github.com/roan-eb/CookieDough/blob/main/img/Screenshot%202023-06-02%20at%208.49.07%20PM.png)
 
 ## Live demo
 -
