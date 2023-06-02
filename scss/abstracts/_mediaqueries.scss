@@ -1,0 +1,56 @@
+@media screen and (max-width: 68.75rem) {
+    .save {
+        display: none;
+    }
+
+    .upgrades {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .cookie {
+        width: 25rem;
+
+        &__spots--first {
+            width: 6rem;
+        }
+
+        &__spots--second {
+            width: 3.9rem;
+        }
+
+        &__spots--third {
+            width: 5rem;
+        }
+
+        &__spots--fourth {
+            width: 4.9rem;
+        }
+
+        &__spots--fifth {
+            width: 3.9rem;
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }    
+    }
+
+    .score{
+        font-size: 200%;
+        width: 100%;
+    }
+
+    .upgradesMobile{
+        display: grid;
+    }
+
+}

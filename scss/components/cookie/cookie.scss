@@ -1,0 +1,85 @@
+@use "../../abstracts/colors.scss";
+
+.cookie {
+    width: 35rem;
+    aspect-ratio: 1/1;
+    background: map-get(colors.$cookie, "background");
+    border-radius: 50%;
+    box-shadow: 
+        inset 0 0 10rem 0rem map-get(colors.$cookie, "spots"),
+        0 2rem 1rem 0rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border: 0.5rem solid map-get(colors.$cookie, "spots");
+    transition: 0.2s all;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:active{
+        transform: scale(0.9);
+    }
+
+    &--chocolate{
+        background: #CC9544; // map-get(colors.$cookieChocolate, "chocolate"); //
+        box-shadow:
+        inset 0 0 10rem 0rem map-get(colors.$cookie, "spots"),
+        0 2rem 1.5rem 0rem rgba(0, 0, 0, 0.2);
+        border: 0.5rem solid map-get(colors.$cookieChocolate, "spots");
+    }
+
+    &--velvet{
+        background: map-get(colors.$cookieVelvet, "velvet");
+        box-shadow:
+        inset 0 0 10rem 0rem map-get(colors.$cookieVelvet, "shadow"),
+        0 2rem 1.5rem 0rem rgba(0, 0, 0, 0.2);
+        border: 0.5rem solid map-get(colors.$cookieVelvet, "velvet");
+    }
+
+    &--chocolate &__spots{
+        background: map-get(colors.$cookieChocolate, "spots");
+        border-radius: 40%;
+    }
+
+    &--velvet &__spots{
+        background: map-get(colors.$cookieVelvet, "spots");
+        border-radius: 35%;
+    }
+
+    &__spots {
+        width: 9.5rem;
+        aspect-ratio: 1/1;
+        background: map-get(colors.$cookie, "spots");
+        border-radius: 48%;
+        position: absolute;
+
+        &--first{
+            top: 40%;
+            left: 35%;    
+        }
+
+        &--second{
+            right: 25%;
+            top: 5%;
+            width: 5.5rem;
+        }
+
+        &--third{
+            right: 5%;
+            bottom: 19%;
+            width: 8.5rem;
+        }
+
+        &--fourth{
+            left: 8%;
+            bottom: 10%;
+            width: 7.5rem;
+        }
+        &--fifth{
+            left: 10%;
+            top: 20%;
+            width: 6.5rem;
+        }
+    }
+}
